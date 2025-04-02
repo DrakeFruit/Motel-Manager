@@ -1,0 +1,79 @@
+DialoguePanel
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 1.5%;
+	pointer-events: all;
+
+	.ChatBox
+	{
+		flex-direction: column;
+		align-self: center;
+		align-items: flex-start;
+		font-weight: bold;
+		background-color: white;
+		border: #1b202c 3px;
+		border-radius: 2%;
+		
+		width: 90%;
+		height: 25%;
+	}
+	
+	.Name
+	{
+		position: absolute;
+		transform: translate( 20px, -50px );
+		background-color: white;
+		border: #1b202c 3px;
+		border-radius: 5px;
+		padding: 15px;
+		
+		width: auto;
+		height: auto;
+	}
+	
+	.Dialogue
+	{
+		font-size: 40px;
+		align-self: center;
+		align-items: center;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		
+		max-width: 95%;
+		margin-top: 40px;
+	}
+	
+	.Responses
+	{
+		flex-direction: row;
+		align-self: center;
+		justify-content: space-evenly;
+		
+		width: 60%;
+		margin-top: 100px;
+	}
+	
+	.Response
+	{
+		background-color: #e3e0dd;
+		border: #1b202c 3px;
+		border-radius: 5px;
+		font-size: 30px;
+		padding: 5px 5px 2px 5px;
+		
+		width: auto;
+		height: auto;
+		
+		&:hover
+		{
+			background-color: #777589;
+			color: white;
+		}
+	}
+}

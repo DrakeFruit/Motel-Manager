@@ -1,0 +1,29 @@
+@using Sandbox;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	<div class="ChatBox">
+		<div class="Name">John Doe</div>
+		<div class="Dialogue">Hello! Looking for a room for 1, please.</div>
+		<div class="Responses">
+			<div class="Response">Sure!</div>
+			<div class="Response" onclick="@( () => Close() )">FUCK YOU</div>
+		</div>
+	</div>
+</root>
+
+@code
+{
+	protected override void OnFixedUpdate()
+	{
+		if ( Input.EscapePressed || Input.Pressed( "score" ) ) Close();
+	}
+	
+	public void Close()
+	{
+		Enabled = false;
+	}
+	
+	protected override int BuildHash() => 0;
+}
