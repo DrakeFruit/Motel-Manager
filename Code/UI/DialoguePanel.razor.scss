@@ -15,19 +15,20 @@ DialoguePanel
 		flex-direction: column;
 		align-self: center;
 		align-items: flex-start;
+		justify-content: space-evenly;
 		font-weight: bold;
 		background-color: white;
 		border: #1b202c 3px;
 		border-radius: 2%;
 		
 		width: 90%;
-		height: 25%;
+		height: 20%;
 	}
 	
 	.Name
 	{
 		position: absolute;
-		transform: translate( 20px, -50px );
+		transform: translate( 20px, -115px );
 		background-color: white;
 		border: #1b202c 3px;
 		border-radius: 5px;
@@ -46,7 +47,7 @@ DialoguePanel
 		overflow-x: hidden;
 		
 		max-width: 95%;
-		margin-top: 40px;
+		padding-top: .5%;
 	}
 	
 	.Responses
@@ -56,7 +57,7 @@ DialoguePanel
 		justify-content: space-evenly;
 		
 		width: 60%;
-		margin-top: 100px;
+		margin-top: 20px;
 	}
 	
 	.Response
@@ -69,10 +70,16 @@ DialoguePanel
 		
 		width: auto;
 		height: auto;
-		
+
 		&:hover
 		{
 			background-color: #777589;
+			color: white;
+		}
+		
+		&:active
+		{
+			background-color: green;
 			color: white;
 		}
 	}
