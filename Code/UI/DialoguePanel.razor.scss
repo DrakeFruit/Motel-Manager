@@ -9,6 +9,7 @@ DialoguePanel
 	justify-content: flex-end;
 	padding-bottom: 1.5%;
 	pointer-events: all;
+	font-family: "Trebuchet MS";
 
 	.ChatBox
 	{
@@ -27,12 +28,14 @@ DialoguePanel
 	
 	.Name
 	{
+		font-family: Poppins;
+		font-size: 40px;
 		position: absolute;
-		transform: translate( 20px, -115px );
+		transform: translate( 50px, -115px );
 		background-color: white;
 		border: #1b202c 3px;
 		border-radius: 5px;
-		padding: 15px;
+		padding: 10px;
 		
 		width: auto;
 		height: auto;

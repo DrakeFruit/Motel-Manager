@@ -1,4 +1,6 @@
+@using System
 @using Sandbox;
+@using Sandbox.ActionGraphs
 @inherits PanelComponent
 @namespace Sandbox
 
@@ -7,7 +9,8 @@
 		<div class="Name">John Doe</div>
 		<div class="Dialogue">Hello! Looking for a room for 1, please.</div>
 		<div class="Responses">
-			<div class="Response">Sure!</div>
+			<div class="Response" 
+			     onclick="@( () => Close() )">Sure!</div>
 			<div class="Response" onclick="@( () => Close() )">FUCK YOU</div>
 		</div>
 	</div>
@@ -15,6 +18,7 @@
 
 @code
 {
+	//[Property] Action Option1 { get; set; }
 	protected override void OnFixedUpdate()
 	{
 		if ( Input.EscapePressed || Input.Pressed( "score" ) ) Close();

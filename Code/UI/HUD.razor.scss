@@ -1,0 +1,25 @@
+HUD
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: flex-end;
+	font-weight: bold;
+	border-radius: 20px;
+
+	.Cash
+	{
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+		font-size: 45%;
+		justify-content: center;
+		align-items: center;
+		font-family: "The Wild Breath of Zelda";
+		
+		padding-left: 1%;
+		width: 30%;
+		height: 10%;
+	}
+}

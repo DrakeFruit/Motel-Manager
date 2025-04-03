@@ -1,0 +1,21 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+	@if ( IsProxy ) return;
+	<div class="Cash">@Cash</div>
+</root>
+
+@code
+{
+	public static int Cash { get; set; }
+
+	protected override void OnStart()
+	{
+		Cash = 0;
+	}
+
+	protected override int BuildHash() => Cash;
+}
