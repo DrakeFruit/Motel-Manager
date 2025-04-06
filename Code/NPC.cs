@@ -55,6 +55,7 @@ public sealed class NPC : Component, Component.IPressable
 		SPanel.Enabled = true;
 		
 		TargetPlayer = press.Source;
+		Dialogue.Player = TargetPlayer;
 		var rot = Rotation.LookAt( TargetPlayer.WorldPosition - WorldPosition ).Angles().WithPitch( 0 );
 		if ( Rotation.Difference( WorldRotation, rot ).Angle() > 90 ) WorldRotation = rot;
 		

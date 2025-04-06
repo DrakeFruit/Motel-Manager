@@ -4,6 +4,19 @@
     "Flags": 0,
     "Name": "testing room",
     "Enabled": true,
+    "Components": [
+      {
+        "__type": "Room",
+        "__guid": "253ee791-f5ca-46a8-bd8b-ebda87ab55cc",
+        "Occupant": null,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      }
+    ],
     "Children": [
       {
         "__guid": "d85a5a7b-c2ff-49a3-bfa5-3cfc3101c7c7",
@@ -55,7 +68,8 @@
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
           }
-        ]
+        ],
+        "Children": []
       },
       {
         "__guid": "5060858b-b201-45b2-a615-b885b9033ee2",
@@ -107,7 +121,8 @@
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
           }
-        ]
+        ],
+        "Children": []
       },
       {
         "__guid": "ec1329d1-a080-4361-856a-dda4f2b05654",
@@ -156,7 +171,8 @@
             "Tint": "1,1,1,1",
             "UseAnimGraph": true
           }
-        ]
+        ],
+        "Children": []
       },
       {
         "__guid": "9186b1bf-54d8-40f9-98f3-68271ccc9f90",
@@ -209,7 +225,8 @@
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
           }
-        ]
+        ],
+        "Children": []
       },
       {
         "__guid": "1e313e28-2223-43e2-9670-1fa3aba5e1b1",
@@ -261,7 +278,8 @@
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
           }
-        ]
+        ],
+        "Children": []
       },
       {
         "__guid": "0a4ff943-9e30-44ca-a450-8f46c7e4710a",
@@ -291,7 +309,8 @@
             "Radius": 500,
             "Shadows": true
           }
-        ]
+        ],
+        "Children": []
       },
       {
         "__guid": "f2f50725-fe02-4abb-b43f-514c2e444d67",
@@ -1086,19 +1105,15 @@
             "Surface": null,
             "SurfaceVelocity": "0,0,0"
           }
-        ]
+        ],
+        "Children": []
       }
     ],
     "__variables": [],
     "__properties": {
-      "FixedUpdateFrequency": 50,
-      "MaxFixedUpdates": 5,
-      "NetworkFrequency": 30,
       "NetworkInterpolation": true,
-      "PhysicsSubSteps": 1,
-      "ThreadedAnimation": true,
       "TimeScale": 1,
-      "UseFixedUpdate": true,
+      "WantsSystemScene": true,
       "Metadata": {},
       "NavMesh": {
         "Enabled": false,

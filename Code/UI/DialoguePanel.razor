@@ -10,21 +10,26 @@
 		<div class="Dialogue">Hello! Looking for a room for 1, please.</div>
 		<div class="Responses">
 			<div class="Response" 
-			     onclick="@( () => Close() )">Sure!</div>
-			<div class="Response" onclick="@( () => Close() )">FUCK YOU</div>
+			     onclick="@( () => Accept() )">Sure!</div>
+			<div class="Response" onclick="@( () => Deny() )">FUCK YOU</div>
 		</div>
 	</div>
 </root>
 
 @code
 {
-	//[Property] Action Option1 { get; set; }
+	public Component Player { get; set; }
 	protected override void OnFixedUpdate()
 	{
-		if ( Input.EscapePressed || Input.Pressed( "score" ) ) Close();
+		if ( Input.EscapePressed || Input.Pressed( "score" ) ) Enabled = false;
+	}
+
+	public void Accept()
+	{
+		Enabled = false;
 	}
 	
-	public void Close()
+	public void Deny()
 	{
 		Enabled = false;
 	}
